@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+  <img
+      src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+      alt="Google"
+      height="30"
+      width="92"
+      data-atf="1"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <div class="p-3 mb-2 bg-primary text-white"><h1>로그인</h1></div>
+    
+
+    <form method="POST" action="/log_result/">
+      ID<input type="text" id="ua" name="userid" value=""/>
+
+      PW<input type="text" id="ua" name="userpw" value=""/>
+      <div class="d-grid gap-2 d-md-block">
+      <a class="btn btn-primary" href="{{ url_for('log_result') }}"
+        >로그인</a
+      >
+    </form>
+  </body>
+</html>

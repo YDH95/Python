@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <form method="POST" action="/">
+      <h1>NO:{{data}}</h1>
+      <input type="submit" value="홈페이지로 넘어가기" />
+      <a class="btn btn-primary" href="{{ url_for('homepage_page') }}"
+        >회원탈퇴</a
+      >
+    </form>
+  </body>
+</html>
+<!--
+어떤 페이지로 이동해야하는가
+uns이라는곳으로 가자
+그러면 이녀석을 삭제할수있다. 
+ <a href="http://localhost:5000/uns?uid={{}}">회원탈퇴</a>
+-->
