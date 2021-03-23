@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <html>
+    <body>
+      <h2>HTML Forms</h2>
+      <h3>{% if info %}
+        {{info}}
+        {%endif%}
+        {% if id %}
+        {{id}}님
+        <button onclick="location.href='/logout'">로그아웃</button>
+        {% else %}
+        <form method="POST" action="/login/">
+          ID <input type="text" id="u_id" name="user_id"><br>
+        PASS <input type="text" id="u_pw" name="user_pw"><br>
+        <input type="submit" value="Submit">
+      </form> 
+        {%endif%}
+      </h3>
+        
+    </body>
+</html>
